@@ -30,3 +30,4 @@ console.log(rua, numero);
 
 const { nome: nome1, ...resto } = pessoa; // pegando o valor da primeira chave e todo o resto, o chave 'nome' ja tinha sido usada anteriormente, portando foi preciso atribuir novo valor a chave
 console.log(resto);
+

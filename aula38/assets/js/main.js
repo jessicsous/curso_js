@@ -6,13 +6,13 @@ const elementos = [
 ];
 
 const container = document.querySelector('.container');
-const div = document.createElement('div');
+const div = document.createElement('div'); // cria elemento (div)
 
 for (let i = 0; i < elementos.length; i++) {
     let { tag, texto } = elementos[i]; // associação via desestruturação
-    let elemento = document.createElement(tag);
+    let elemento = document.createElement(tag); // cria elemento (tag)
     elemento.innerText = texto;
-    div.appendChild(elemento);
+    div.appendChild(elemento); // adiciona um filho (tag) ao elemento (div)
 }
 
 container.appendChild(div);

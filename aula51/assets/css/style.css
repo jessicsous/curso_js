@@ -62,8 +62,3 @@ form button:hover {
 form button:active {
     background: var(--primary-color-darker);
 }
-
-.relogio {
-    font-size: 3em;
-}
-

@@ -22,3 +22,26 @@ function executaDadoFuncao() {
 
 executaDadoFuncao();
 
+// arrow function  --> tratada como dado também
+const funcaoArrow = () => {
+    console.log('função arrow');
+};
+funcaoArrow();
+
+
+// Dentro de um objeto pode ter uma função
+const objeto = {
+    falar: function() {
+        console.log('falar...');
+    }
+};
+objeto.falar();  // --> usando função como método de objeto com a notação de ponto;
+
+
+// outra maneira de função dentro de um objeto
+const objetoOuvir = {
+    ouvir() {
+        console.log('ouvir..');
+    }
+};
+objetoOuvir.ouvir();

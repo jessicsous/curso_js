@@ -69,3 +69,4 @@ function conta(operador, acumulador, ...numeros) {
     console.log(acumulador);
 }
 conta('+', 0, 2, 3, 4, 5);
+

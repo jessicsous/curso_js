@@ -1,4 +1,5 @@
 // função splice --> usada com array
+// essa função substitui quase todos os métodos que mexem em array
 
  //              -5         -4      -3       -2         -1
  //              0          1       2       3           4
@@ -18,3 +19,6 @@ console.log(nomes.splice(-3, Number.MAX_VALUE)); // a partir do -3 apaga o máxi
 // adicionar coisas com splice
 
 const add = nomes.splice(3, 0, 'silva'); // a partir do indice 3, não apaga nada, adiciona 'silva'
+
+// adicionando ao começo do array
+console.log(nomes.splice(0,0, 'jessica', 'silva')); // adiciona ao começo do array

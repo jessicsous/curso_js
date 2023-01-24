@@ -1,5 +1,6 @@
 // herança com classes
 // na herança tudo é herdado do pai, o pai n herda nada do filho
+// os irmão nãp herdam nada um do outro
 class DispositivoEletronico {
     constructor(nome) {
         this.nome = nome;

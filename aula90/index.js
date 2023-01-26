@@ -9,6 +9,8 @@ function aleatorio(min, max) {
 // com promise
 function espera(msg, tempo) {
     return new Promise((resolve, reject) => {
+
+      if(typeof msg !== 'String') reject(new Error);
         setTimeout(() => {
             resolve(msg);
         }, tempo);
@@ -29,7 +31,9 @@ espera('frase 1', rand(1, 3))
   }).then(() => {
     console.log('exibe na tela');
   })
-  .catch();
+  .catch(e => {
+    console.log('Erro:', e);
+  });
 
 
 

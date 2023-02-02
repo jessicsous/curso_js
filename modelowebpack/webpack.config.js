@@ -1,23 +1,17 @@
-const path = require('path'); // commonJS como sistema de módulos
+const path = require('path'); // CommonJS
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve(_dirname, 'public', 'assets', 'js'),
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, "dist"),
+    filename: 'js/bundle.js',
   },
-  module: {
-    rules: [{
-        exclude: /node_modules/,
-        test: /\.js$/,
-        use: {
-            loader: 'babel-loader',
-            options: {
-                presets: ['@babel/env']
-            }
-        }
-    }]
+  devServer: {
+    static: {
+        directory: path.join(__dirname, 'src'),
+    },
+    compress: true,
+    port: 9000,
   },
-  devtool: 'source-map'
 };

@@ -1,7 +1,6 @@
 const path = require('path'); // CommonJS
 
 module.exports = {
-  mode: 'development',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -14,5 +13,5 @@ module.exports = {
     compress: true,
     port: 9000,
   },
-  
+
 };
